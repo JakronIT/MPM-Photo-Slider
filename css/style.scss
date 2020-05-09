@@ -9,13 +9,13 @@ body{
     font-size: 62.5%;
 }
 
-main{
-    font-size: 1.1rem;
+article{
+    font-size: 1.2rem;
     margin: 0 1.2rem 0 1.2rem;
     text-align: justify;
     color: grey;
     max-height: 50vh;
-    padding-top: 40vh;
+    padding-top: 45vh;
 }
 
 .background{
@@ -25,10 +25,12 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     padding: 1rem 0;
+    padding-bottom: 3rem;
 
     .arrow{
         margin-left: 10px;
         font-size: 2rem;
+        
 
         a{
             text-decoration: none;
@@ -63,17 +65,23 @@ header{
 }
 
 .header-nav {
-    height: 50vh;
+    height: 40vh;
     position: fixed;
     width: 100vw;
+    background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(106, 9, 28, 0.6)), to(rgba(19, 100, 195, 0.5))), url("../assets/app_hero_white.jpg");
+    background-image: linear-gradient(to bottom left, rgba(106, 9, 28, 0.6), rgba(19, 100, 195, 0.5)), url("../assets/app_hero_white.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 900px;
 }
-
 .nav-bar{
     background-color: white;
     display: flex;
-    padding: 2rem;
     font-size: 1.1rem;
-
+    left: 0;
+    padding: 2rem 0 2rem 1.2rem;
+    
     ul li{
         display: inline-block;
         width: 100px;
