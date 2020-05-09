@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+main{
+    font-size: 1.1rem;
+    margin: 0 1.2rem 0 1.2rem;
+    text-align: justify;
+    color: grey;
+    max-height: 50vh;
+    padding-top: 40vh;
+}
+
+.background{
+    background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(106, 9, 28, 0.6)), to(rgba(19, 100, 195, 0.5))), url("../assets/app_hero_white.jpg");
+    background-image: linear-gradient(to bottom left, rgba(106, 9, 28, 0.6), rgba(19, 100, 195, 0.5)), url("../assets/app_hero_white.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+
+    .arrow{
+        margin-left: 10px;
+        font-size: 2rem;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+header{
+    h1{
+        font-weight: 400;
+        font-size: 2.3rem;
+        margin-right: 1rem;
+    }
+
+    h2{
+        font-weight: 800;
+        font-size: 1.2rem;
+        margin: 0 1rem 1rem 0;
+    }
+
+    h3{
+        font-weight: 800;
+        font-size: 1rem;
+        margin-right: 1rem;
+        font-style: italic;
+    }
+
+    .title{
+        text-align: right;
+    }
+}
+
+.header-nav {
+    height: 50vh;
+    position: fixed;
+    width: 100vw;
+}
+
+.nav-bar{
+    background-color: white;
+    display: flex;
+    padding: 2rem;
+    font-size: 1.1rem;
+
+    ul li{
+        display: inline-block;
+        width: 100px;
+
+        :nth-child(2){
+            display: inline-block;
+            width: 100px;
+        }
+    }
+}
+
+.underline {
+    color: black;
+    /* font-weight: 800; */
+    border-bottom: red solid 2px;
+    padding: 0 0px 0px 0px;
+}
+
+.invisibility{
+    display: none;
+}
+
+p:first-child{
+    color: black;
+}
+
+@media (min-width: 900px){
+    body{
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+    }
+}
