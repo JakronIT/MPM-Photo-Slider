@@ -1,0 +1,62 @@
+@import "main.css";
+.nav-bar a:nth-child(3){
+    color: black;
+    font-weight: 800;
+    border-bottom: red solid .1rem;
+    padding-bottom: .6rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
+}
+main{
+    background-image: url(../assets/road1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.arrows{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo-bar{
+    display: flex;
+    margin: 2rem 0;
+}
+.left-arrow{
+    background-image: url(../assets/left-arrow.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.right-arrow{
+    background-image: url(../assets/right-arrow.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    color: #707070;
+}
+
+.tile1{
+    background-image: url(../assets/road2.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 36%;
+}
+.tile2{
+    background-image: url(../assets/road3.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 36%;
+    margin: 0 5%;
+}
+.tile3{
+    background-image: url(../assets/road4.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 18%;
+}

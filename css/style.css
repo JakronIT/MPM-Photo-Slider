@@ -1,0 +1,38 @@
+@import "main.css";
+
+.nav-bar{
+    background-color: white;
+    /* z-index: 500; */
+}
+.nav-bar ul li{
+    display: inline-block;
+    width: 100px;
+}
+
+.nav-bar ul li:nth-child(2){
+    display: inline-block;
+    width: 100px;
+}
+
+.underline {
+    color: black;
+    /* font-weight: 800; */
+    border-bottom: red solid 2px;
+    padding: 0 0px 0px 0px;
+}
+
+p:first-child{
+    color: black;
+}
+main{
+    font-size: 0.9rem;
+    margin: 0 1.2rem 0 1.2rem;
+    text-align: justify;
+    color: grey;
+    max-height: 50vh;
+    padding-top: 45vh;
+}
+
+.invisibility{
+    display: none;
+}
