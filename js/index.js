@@ -1,12 +1,13 @@
 $(function(){
-    $("#text1").load("./html/opis_zasole.html");
-    $("#text2").load("./html/mapa_zasole.html");  
+    $("#opis").load("./html/opis_zasole.html");
+    $("#mapa").load("./html/mapa_zasole.html");  
+    $("#zdjecia").load("./html/zdjecia_zasole.html");
   });
 
 document.getElementById("btn1").addEventListener("click", function () {
-    document.getElementById("text1").classList.remove("invisibility");
-    document.getElementById("text2").classList.add("invisibility");
-    document.getElementById("text3").classList.add("invisibility");
+    document.getElementById("opis").classList.remove("invisibility");
+    document.getElementById("mapa").classList.add("invisibility");
+    document.getElementById("zdjecia").classList.add("invisibility");
 
     document.getElementById("btn1").classList.add("underline");
     document.getElementById("btn2").classList.remove("underline");
@@ -14,9 +15,9 @@ document.getElementById("btn1").addEventListener("click", function () {
 })
 
 document.getElementById("btn2").addEventListener("click", function () {
-    document.getElementById("text1").classList.add("invisibility");
-    document.getElementById("text2").classList.remove("invisibility");
-    document.getElementById("text3").classList.add("invisibility");
+    document.getElementById("opis").classList.add("invisibility");
+    document.getElementById("mapa").classList.remove("invisibility");
+    document.getElementById("zdjecia").classList.add("invisibility");
 
     document.getElementById("btn1").classList.remove("underline");
     document.getElementById("btn2").classList.add("underline");
@@ -24,9 +25,9 @@ document.getElementById("btn2").addEventListener("click", function () {
 })
 
 document.getElementById("btn3").addEventListener("click", function () {
-    document.getElementById("text1").classList.add("invisibility");
-    document.getElementById("text2").classList.add("invisibility");
-    document.getElementById("text3").classList.remove("invisibility");
+    document.getElementById("opis").classList.add("invisibility");
+    document.getElementById("mapa").classList.add("invisibility");
+    document.getElementById("zdjecia").classList.remove("invisibility");
 
     document.getElementById("btn1").classList.remove("underline");
     document.getElementById("btn2").classList.remove("underline");
