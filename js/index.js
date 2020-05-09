@@ -1,3 +1,8 @@
+$(function(){
+    $("#text1").load("./html/opis_zasole.html");
+    $("#text2").load("./html/mapa_zasole.html");  
+  });
+
 document.getElementById("btn1").addEventListener("click", function () {
     document.getElementById("text1").classList.remove("invisibility");
     document.getElementById("text2").classList.add("invisibility");
