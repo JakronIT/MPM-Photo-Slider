@@ -6,16 +6,36 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 62.5%;
 }
 
 article {
   font-size: 1.2rem;
-  margin: 0 1.2rem 0 1.2rem;
   text-align: justify;
   color: grey;
   max-height: 50vh;
-  padding-top: 45vh;
+  padding-top: 50vh;
+}
+
+article #mapa {
+  margin: 0;
+}
+
+.map-container {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  margin: 0;
+  height: 50vh;
+  width: 100vw;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 50vh;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
 }
 
 .background {
@@ -26,10 +46,11 @@ article {
   background-repeat: no-repeat;
   padding: 1rem 0;
   padding-bottom: 3rem;
+  height: 40vh;
 }
 
 .background .arrow {
-  margin-left: 10px;
+  margin-left: 30px;
   font-size: 2rem;
 }
 
@@ -59,18 +80,17 @@ header h3 {
 
 header .title {
   text-align: right;
+  position: absolute;
+  bottom: 15vh;
+  width: 100vw;
 }
 
 .header-nav {
-  height: 40vh;
+  height: 50vh;
   position: fixed;
   width: 100vw;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(106, 9, 28, 0.6)), to(rgba(19, 100, 195, 0.5))), url("../assets/app_hero_white.jpg");
-  background-image: linear-gradient(to bottom left, rgba(106, 9, 28, 0.6), rgba(19, 100, 195, 0.5)), url("../assets/app_hero_white.jpg");
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  max-width: 900px;
+  background-size: cover;
 }
 
 .nav-bar {
@@ -81,6 +101,12 @@ header .title {
   font-size: 1.1rem;
   left: 0;
   padding: 2rem 0 2rem 1.2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-bar ul li {
@@ -106,6 +132,7 @@ header .title {
 
 p:first-child {
   color: black;
+  margin: 0 1.2rem 0 1.2rem;
 }
 
 @media (min-width: 900px) {
