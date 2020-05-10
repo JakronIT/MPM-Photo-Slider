@@ -8,44 +8,19 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
-article {
-  font-size: 1.2rem;
-  text-align: justify;
-  color: grey;
-  max-height: 50vh;
-  padding-top: 50vh;
-}
-
-.map-container {
-  position: relative;
+.header-nav {
   height: 50vh;
+  position: fixed;
   width: 100vw;
-}
-
-.map-container iframe {
-  height: 50vh;
-  width: 100vw;
-}
-
-.background {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(106, 9, 28, 0.6)), to(rgba(19, 100, 195, 0.5))), url("../assets/app_hero_white.jpg");
-  background-image: linear-gradient(to bottom left, rgba(106, 9, 28, 0.6), rgba(19, 100, 195, 0.5)), url("../assets/app_hero_white.jpg");
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: 1rem 0;
-  padding-bottom: 3rem;
-  height: 40vh;
+  background-size: cover;
 }
 
-.background .arrow {
-  margin-left: 30px;
-  font-size: 2rem;
-}
-
-.background .arrow a {
-  text-decoration: none;
-  color: white;
+header {
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(176, 176, 176, 0.6);
+  box-shadow: 0px 0px 3px 1px rgba(176, 176, 176, 0.6);
+  top: 0;
+  height: 50vh;
 }
 
 header h1 {
@@ -74,12 +49,24 @@ header .title {
   width: 100vw;
 }
 
-.header-nav {
-  height: 50vh;
-  position: fixed;
-  width: 100vw;
-  background-position: center;
+.background {
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(106, 9, 28, 0.6)), to(rgba(19, 100, 195, 0.5))), url("../assets/app_hero_white.jpg");
+  background-image: linear-gradient(to bottom left, rgba(106, 9, 28, 0.6), rgba(19, 100, 195, 0.5)), url("../assets/app_hero_white.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.background .arrow {
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 2rem;
+}
+
+.background .arrow a {
+  text-decoration: none;
+  color: white;
 }
 
 .nav-bar {
@@ -89,7 +76,7 @@ header .title {
   display: flex;
   font-size: 1.1rem;
   left: 0;
-  padding: 2rem 0 2rem 1.2rem;
+  padding: 2rem 0 2rem 0;
   position: absolute;
   bottom: 0;
   width: 100vw;
@@ -98,37 +85,53 @@ header .title {
           justify-content: center;
 }
 
+.nav-bar ul {
+  width: 100vw;
+  border-bottom: red solid 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
 .nav-bar ul li {
   display: inline-block;
   width: 100px;
+  text-align: center;
 }
 
-.nav-bar ul li :nth-child(2) {
-  display: inline-block;
-  width: 100px;
+article {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: grey;
+  max-height: 50vh;
+  padding-top: 50vh;
 }
 
-.underline {
+article p {
+  margin: 1rem 1.2rem 0 1.2rem;
+}
+
+article p:first-child {
   color: black;
-  /* font-weight: 800; */
-  border-bottom: red solid 2px;
-  padding: 0 0px 0px 0px;
 }
 
 .invisibility {
   display: none;
 }
 
-p:first-child {
-  color: black;
-  margin: 0 1.2rem 0 1.2rem;
+.map-container {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
 }
 
-@media (min-width: 900px) {
-  body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 900px;
-  }
+.map-container iframe {
+  height: 50vh;
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
