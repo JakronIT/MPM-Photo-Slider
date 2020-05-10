@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -91,7 +92,6 @@ header {
 
     ul {
         width: 100vw;
-        border-bottom: red solid 2px;
         display: flex;
         justify-content: space-between;
         margin-left: 1.2rem;
@@ -124,6 +124,8 @@ article {
 .invisibility {
     display: none;
 }
+
+
 
 .map-container {
     position: relative;
