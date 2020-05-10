@@ -16,10 +16,6 @@ article {
   padding-top: 50vh;
 }
 
-article #mapa {
-  margin: 0;
-}
-
 .map-container {
   overflow: hidden;
   position: relative;
