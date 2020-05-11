@@ -82,20 +82,25 @@ header {
 .nav-bar {
     background-color: white;
     display: flex;
+    flex-direction: column;
     font-size: 1.1rem;
     left: 0;
     padding: 2rem 0 2rem 0;
     position: absolute;
     bottom: 0;
     width: 100vw;
+    z-index: 1;
     justify-content: center;
+
+    hr.underline{
+        border-top: red 1.5px solid;
+        width: 100vw;
+    }
 
     ul {
         width: 100vw;
         display: flex;
-        justify-content: space-between;
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
+        justify-content: space-around;
 
         li {
             display: inline-block;
@@ -124,8 +129,6 @@ article {
 .invisibility {
     display: none;
 }
-
-
 
 .map-container {
     position: relative;
