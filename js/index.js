@@ -9,9 +9,9 @@ document.getElementById("btn1").addEventListener("click", function () {
   document.getElementById("mapa").classList.add("invisibility");
   document.getElementById("zdjecia").classList.add("invisibility");
 
-  document.getElementById("btn1").classList.add("underline");
-  document.getElementById("btn2").classList.remove("underline");
-  document.getElementById("btn3").classList.remove("underline");
+  document.getElementById("udl").classList.add("underline0");
+  document.getElementById("udl").classList.remove("underline1");
+  document.getElementById("udl").classList.remove("underline2");
 });
 
 document.getElementById("btn2").addEventListener("click", function () {
@@ -19,9 +19,9 @@ document.getElementById("btn2").addEventListener("click", function () {
   document.getElementById("mapa").classList.remove("invisibility");
   document.getElementById("zdjecia").classList.add("invisibility");
 
-  document.getElementById("btn1").classList.remove("underline");
-  document.getElementById("btn2").classList.add("underline");
-  document.getElementById("btn3").classList.remove("underline");
+  document.getElementById("udl").classList.remove("underline0");
+  document.getElementById("udl").classList.add("underline1");
+  document.getElementById("udl").classList.remove("underline2");
 });
 
 document.getElementById("btn3").addEventListener("click", function () {
@@ -29,7 +29,7 @@ document.getElementById("btn3").addEventListener("click", function () {
   document.getElementById("mapa").classList.add("invisibility");
   document.getElementById("zdjecia").classList.remove("invisibility");
 
-  document.getElementById("btn1").classList.remove("underline");
-  document.getElementById("btn2").classList.remove("underline");
-  document.getElementById("btn3").classList.add("underline");
+  document.getElementById("udl").classList.remove("underline0");
+  document.getElementById("udl").classList.remove("underline1");
+  document.getElementById("udl").classList.add("underline2");
 });

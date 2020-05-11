@@ -92,9 +92,25 @@ header .title {
           justify-content: center;
 }
 
-.nav-bar hr.underline {
-  border-top: red 1.5px solid;
-  width: 100vw;
+.nav-bar hr {
+  border-bottom: red 2px solid;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.nav-bar .underline0 {
+  margin-left: 9vw;
+  width: 16vw;
+}
+
+.nav-bar .underline1 {
+  margin-left: 41vw;
+  width: 18vw;
+}
+
+.nav-bar .underline2 {
+  margin-left: 73vw;
+  width: 21vw;
 }
 
 .nav-bar ul {
@@ -141,5 +157,19 @@ article p:first-child {
 .map-container iframe {
   height: 50vh;
   width: 100vw;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2vh 0 0 0;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.gallery img {
+  max-height: 30vh;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
